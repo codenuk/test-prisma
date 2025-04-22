@@ -9,9 +9,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-import hospitalRouter from './Routers/hospital.routes';
+import userRouter from './Routers/user.routes';
 
-app.use('/hospital', hospitalRouter);
+app.use('/user', userRouter);
 
 // catch 404 and forward to error handler
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
